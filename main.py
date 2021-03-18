@@ -120,7 +120,7 @@ def print_layer_info(filename,NUM_PE):
     print(output[0:100])
     return output,output_len
 def main():
-    filename = "./alexNet-fc8.tar"
+    filename = "./vgg16-fc7.tar"
     outputus = assemble(filename,NUM_PE,100000)
     output,output_len = print_layer_info(filename,NUM_PE)
     print("Raw output  :",outputus[0:output_len])
